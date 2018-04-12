@@ -1,0 +1,8 @@
+{
+  "name": "eopjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/brianboyko/elements_of_programming_interviews_conversion_to_es6.git",
+  "author": "Brian Boyko <brian.boyko@gmail.com>",
+  "license": "MIT"
+}
