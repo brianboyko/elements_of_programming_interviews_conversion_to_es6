@@ -5,27 +5,26 @@
   "repository": "https://github.com/brianboyko/elements_of_programming_interviews_conversion_to_es6.git",
   "author": "Brian Boyko <brian.boyko@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "jest": "^22.4.3"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.4.3",
-    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.3",
     "npm-watch": "^0.3.0",
+    "prettier": "^1.12.0",
     "tslint": "^5.9.1",
     "tslint-config-airbnb": "^5.8.0",
+    "tslint-config-prettier": "^1.10.0",
     "typescript": "^2.8.1"
   },
   "scripts": {
     "test": "yarn build && jest",
-    "build": "babel src/ -d lib/",
+    "build": "tsc",
+    "tslint": "./node_modules/.bin/tslint",
     "prepublish": "yarn run build",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+    "pretty": "find ./src/* ./test/* ./src/**/* ./test/**/* | xargs ./node_modules/.bin/prettier --write"
   },
   "watch": {
-    "test": "{src, test}/*.js"
+    "test": "./{src, test}/**/*.*"
   },
   "jest": {
     "transform": {
