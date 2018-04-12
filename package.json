@@ -21,7 +21,8 @@
     "tslint": "./node_modules/.bin/tslint",
     "prepublish": "yarn run build",
     "watch": "npm-watch",
-    "pretty": "find ./src/* ./test/* ./src/**/* ./test/**/* | xargs ./node_modules/.bin/prettier --write"
+    "pretty": "find ./src/* ./test/* ./src/**/* ./test/**/* | xargs ./node_modules/.bin/prettier --write",
+    "lint": "./node_modules/.bin/tslint -c tslint.json './src/**/*.ts'"
   },
   "watch": {
     "test": "./{src, test}/**/*.*"
