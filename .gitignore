@@ -50,3 +50,4 @@ publish
 build/buildinfo.properties
 build/config/buildinfo.properties
 /inc/.DS_Store
+dist/ch1/index.js.map
