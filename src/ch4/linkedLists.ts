@@ -1,9 +1,8 @@
 class LLNode {
-  constructor(public data: any, public next: LLNode | null = null) {
-  }
+  constructor(public data: any, public next: LLNode | null = null) {}
 }
 
-class LinkedList {
+export class LinkedList {
   public head: LLNode;
   public tail: LLNode;
   constructor(data: any = null) {
@@ -29,13 +28,13 @@ class LinkedList {
   insertAfter = (node: LLNode, newNode: LLNode) => {
     newNode.next = node.next;
     node.next = newNode;
-    if(node.next === null){
+    if (node.next === null) {
       this.tail = node;
     }
     return this;
   };
   deleteNodeAfter = (node: LLNode) => {
-    if(node.next){
+    if (node.next) {
       node.next = node.next.next;
     }
     return this;
@@ -53,16 +52,17 @@ class LinkedList {
     let rabbit = this.head && this.head.next;
     let turtle = this.head;
     let count: number = 0;
-    while(rabbit && rabbit.next && turtle && turtle.next){
+    while (rabbit && rabbit.next && turtle && turtle.next) {
       rabbit = rabbit.next;
-      if(count % 2 === 0){
+      if (count % 2 === 0) {
         turtle = turtle.next;
       }
-      if(rabbit === turtle){ // comparing pointers
+      if (rabbit === turtle) {
+        // comparing pointers
         return true;
       }
-      count += 1
+      count += 1;
     }
     return false;
-  }
+  };
 }
