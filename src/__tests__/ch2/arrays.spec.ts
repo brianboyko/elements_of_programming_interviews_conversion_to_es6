@@ -1,4 +1,4 @@
-const { dutchNationalFlag } = require('../../dist/ch2/arrays');
+import { dutchNationalFlag } from '../../ch2/arrays';
 
 describe('Chapter 2 - Arrays', () => {
   describe('Dutch National Flag Problem', () => {

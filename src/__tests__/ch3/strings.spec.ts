@@ -1,9 +1,9 @@
-const {
+import {
   isPalindrome,
   intToString,
   stringToInt,
   baseConversion
-} = require('../../dist/ch3/strings');
+} from '../../ch3/strings';
 
 describe('Strings', () => {
   describe('isPalindrome', () => {

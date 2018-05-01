@@ -1,10 +1,10 @@
-const {
+import {
   countBits,
   parityOfWord,
   rightPropagate,
   moduloPowerOf2,
   isAPowerOf2
-} = require('../../dist/ch1/primativeTypes');
+} from '../../ch1/primativeTypes';
 
 describe('Primative Types', () => {
   describe('countBits', () => {

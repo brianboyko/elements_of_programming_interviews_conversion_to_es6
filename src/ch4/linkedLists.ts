@@ -66,3 +66,5 @@ export class LinkedList {
     return false;
   };
 }
+
+export default LinkedList
